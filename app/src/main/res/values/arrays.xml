@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- These are the options displayed in the unit drop-down Spinner -->
+    <string-array name="array_unit_options">
+        <item>@string/unit_pc</item>
+        <item>@string/unit_kg</item>
+        <item>@string/unit_l</item>
+    </string-array>
+</resources>

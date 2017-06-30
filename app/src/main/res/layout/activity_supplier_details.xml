@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".ProductDetailsActivity">
+
+        <TextView
+            style="@style/style_topic"
+            android:text="@string/supplier_data" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/style_item_info"
+                android:text="@string/supplier_name" />
+
+            <EditText
+                android:id="@+id/supplier_name_et"
+                style="@style/style_item_editText"
+                android:hint="@string/name_of_supplier" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/style_item_info"
+                android:text="@string/supplier_address" />
+
+            <EditText
+                android:id="@+id/supplier_address_et"
+                style="@style/style_item_editText"
+                android:hint="@string/address_of_supplier" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/style_item_info"
+                android:text="@string/supplier_phone" />
+
+            <EditText
+                android:id="@+id/supplier_phone_et"
+                style="@style/style_item_editText"
+                android:autoLink="phone"
+                android:hint="@string/phone_number_of_supplier"
+                android:inputType="phone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/style_item_info"
+                android:text="@string/supplier_email" />
+
+            <EditText
+                android:id="@+id/supplier_email_et"
+                style="@style/style_item_editText"
+                android:hint="@string/email_address_of_supplier"
+                android:inputType="textEmailAddress" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
